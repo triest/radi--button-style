@@ -1,0 +1,59 @@
+
+.title {
+  /*  font-family: "Harlow Solid Italic", serif;*/
+    margin-left: 10px;
+}
+
+.radioContainer {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    font-size: 17px;
+    user-select: none;
+    padding-left: 20px;
+    text-align: right;
+}
+
+.label-radio{
+    margin-left: 10px;
+}
+
+.text{
+    margin-left: 10px;
+}
+
+.radioContainer input {
+    display: none;
+}
+
+.radioContainer .circle {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: #eeee;
+    position: absolute;
+    left: 0;
+    right: 0;
+    border-radius: 50%;
+
+}
+
+.radioContainer:hover .circle {
+ /*   background-color: #cccc;*/
+}
+
+.radioContainer input:checked + .circle {
+    background-color: #145388;
+}
+
+.radioContainer input:checked + .circle:after {
+    content: "";
+    height: 8px;
+    width: 8px;
+    background-color: white;
+    position: absolute;
+    border-radius: 70%;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
