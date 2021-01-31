@@ -35,7 +35,10 @@
     left: 0;
     right: 0;
     border-radius: 50%;
-
+    border-style:solid;
+    border-width: medium;
+    border-color: #737373;
+    border-block-color: #737373;
 }
 
 .radioContainer:hover .circle {
@@ -44,6 +47,8 @@
 
 .radioContainer input:checked + .circle {
     background-color: #145388;
+    border-color: #145388;
+    border-block-color: #145388;
 }
 
 .radioContainer input:checked + .circle:after {
@@ -56,4 +61,6 @@
     top:50%;
     left:50%;
     transform: translate(-50%,-50%);
+    border-color: #145388;
+    border-block-color: #145388;
 }
